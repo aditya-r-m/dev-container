@@ -16,6 +16,6 @@ function rn() {
         echo "Validation successful!"
     fi
 }
-alias tx='tmux new-session \; set -s escape-time 0 \; split-window -h -l 150 \; set -g status off \; bind-key 1 send-keys -t 0 "rn 1" Enter \; bind-key 2 send-keys -t 0 "rn 2" Enter \; attach'
+alias tx='TERM=xterm-256color tmux new-session \; set -s escape-time 0 \; split-window -h -l 150 \; set -g status off \; bind-key 1 send-keys -t 0 "rn 1" Enter \; bind-key 2 send-keys -t 0 "rn 2" Enter \; attach'
 alias xp='hx solution.py'
 
