@@ -1,0 +1,11 @@
+PS1='\[\033[01;38;5;4m\]\W \[\033[01;38;5;6m\]: \[\033[00m\]'
+bind -s 'set completion-ignore-case on'
+
+alias tx='tmux new-session \; set -s escape-time 0 \; split-window -h -l 111 \; set -g status off \; attach'
+alias sd='cd $(find * -type d | fzf)'
+alias gs='git status'
+alias gd='git diff --word-diff'
+alias ga='git add -A'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git log'
