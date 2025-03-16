@@ -1,8 +1,8 @@
 FROM debian:latest
 
-COPY bashrc /root/.bashrc
-
 RUN apt-get update && apt-get install build-essential curl fzf git python3 tmux wget -y
+
+COPY bashrc /root/.bashrc
 
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
 ENV PATH="/root/.cargo/bin:${PATH}"
