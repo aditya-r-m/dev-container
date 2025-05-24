@@ -11,3 +11,5 @@ alias gp='git push'
 alias gl='git log'
 alias tx='TERM=xterm-256color tmux new-session \; set -s escape-time 0 \; split-window -h -l 128 \; set -g status off \; bind-key p send-keys -t 0 "python3 server.py &> /tmp/slog0 &" Enter \; bind-key q send-keys -t 0 "python3 -m http.server &> /tmp/slog1 &" Enter \; bind-key r send-keys -t 0 "wasm-pack build --target web" Enter \; attach'
 
+clear
+
