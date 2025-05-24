@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM tensorflow/tensorflow:latest
 
 RUN apt-get update && apt-get install build-essential curl fzf git procps python3 tmux wget -y
 
